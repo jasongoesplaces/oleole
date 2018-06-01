@@ -1,4 +1,4 @@
-NSERT INTO teams (name,wins,losses,draws,points,ppg) VALUES ("Atlanta United FC", 8, 3, 1, 25, 2.08);
+INSERT INTO teams (name,wins,losses,draws,points,ppg) VALUES ("Atlanta United FC", 8, 3, 1, 25, 2.08);
 INSERT INTO teams (name,wins,losses,draws,points,ppg) VALUES ("Sporting Kansas City", 7, 2, 4, 25, 1.92);
 INSERT INTO teams (name,wins,losses,draws,points,ppg) VALUES ("Columbus Crew SC", 7, 3, 4, 25, 1.79);
 INSERT INTO teams (name,wins,losses,draws,points,ppg) VALUES ("New York City FC", 7, 3, 3, 24, 1.85);
