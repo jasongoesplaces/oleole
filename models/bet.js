@@ -3,7 +3,7 @@ module.exports = function(sequelize, DataTypes) {
       userID: DataTypes.INTEGER,
       gameID: DataTypes.INTEGER,
       betAmount: DataTypes.INTEGER,
-      betResult: DataTypes.BOOLEAN
+      betResult: DataTypes.INTEGER
     });
-    return Todo;
+    return Bet;
   };
