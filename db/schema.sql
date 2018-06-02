@@ -8,7 +8,7 @@ CREATE TABLE `teams` (
   `losses` Int (11) NOT NULL,
   `Draws` Int (11) NOT NULL,
   `Points` Int (11) NOT NULL,
-  `PPG` DECIMAL (10,4) NOT NULL,
+  `Goals` Int (11) NOT NULL,
 
   PRIMARY KEY ( `id` ) 
 );
