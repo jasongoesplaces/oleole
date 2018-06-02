@@ -5,9 +5,9 @@ console.log(ctx);
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ["Wins", "Losses","Draws", "Points"],
+        labels: ["Wins", "Losses", "Draws", "Points"],
         datasets: [{
-            label: 'Wins vs Losses',
+            label: 'Team Stats',
             data: [12, 19,2,36],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
@@ -47,7 +47,7 @@ var myLineChart = new Chart(chart2, {
     data: {
         labels: ["Player1", "Player2","Player3"],
         datasets: [{
-            label: 'Top Players ',
+            label: 'Offense Stats',
             data: [1, 2,3],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
@@ -91,7 +91,7 @@ var myDoughnutChart = new Chart(chart3, {
     
         // These labels appear in the legend and in the tooltips when hovering different arcs
         labels: [
-            'Goals',
+            'Defense Stats',
             
             
         ]
