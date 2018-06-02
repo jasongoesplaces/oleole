@@ -5,8 +5,21 @@ var db = require("../models");
 // =============================================================
 module.exports = function(app) {
 
-  //get route for team stats
+  //get route for all teams stats
 
+app.get("/api/teams", (req, res) => {
+  db.Teams.findAll({}).then((dbTeams) => res.json(dbTeams))
+})
+
+  //get route for specific team stats
+  app.get("/api/teams/:id", (req, res) => {
+    db.Teams.findOne({
+      where: {
+        id: req.params.id
+      }}).then(function(dbTeam) {
+      res.json(dbTeam)
+    })
+})}
   //get route for offense
 
   //get route for defesnse
@@ -18,14 +31,3 @@ module.exports = function(app) {
 
 
     // POST route for saving a new bet
-  app.post("/api/todos", function(req, res) {
-    // create takes an argument of an object describing the bet we want to
-    // place into our table. 
-    db.Bet.create({
-      userID: ,
-      gameID: 
-    }).then(function(dbBet) {
-      // We have access to the new todo as an argument inside of the callback function
-      res.json(dbBet);
-    });
-  });
