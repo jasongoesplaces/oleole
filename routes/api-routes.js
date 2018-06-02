@@ -20,7 +20,11 @@ app.get("/api/teams", (req, res) => {
       res.json(dbTeam)
     })
 })}
+
   //get route for offense
+  app.get("/api/offense", (req, res) => {
+    db.Offense.findAll({}).then((dbOffense) => res.json(dbOffense))
+  })
 
   //get route for defesnse
 
