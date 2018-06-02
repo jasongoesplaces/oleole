@@ -2,6 +2,10 @@
 // chart for the first square
 var ctx = document.getElementById("myChart1");
 console.log(ctx);
+//ajax call
+
+//var array
+
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
