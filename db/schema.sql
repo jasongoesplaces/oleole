@@ -22,3 +22,13 @@ CREATE TABLE 'defense' (
   'saves' VARCHAR(255) NOT NULL,
   PRIMARY KEY ('id')
 )
+
+CREATE TABLE `offense` (
+  `id` Int( 11 ) AUTO_INCREMENT NOT NULL,
+  `name` VARCHAR( 255) NOT NULL,
+  `player` VARCHAR( 11 ) NOT NULL,
+  `goals` Int (11) NOT NULL,
+  `sog` Int (11) NOT NULL,
+  `assists` Int (11) NOT NULL,
+  PRIMARY KEY ( `id` ) 
+);
