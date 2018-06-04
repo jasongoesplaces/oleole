@@ -1,13 +1,13 @@
 // Require mysql
-var mysql = require("mysql");
+var mysql = require("mysql2");
 
 // Set up our connection information
 var connection = mysql.createConnection({
-  port: 3306,
+  port: 8889,
   host: "localhost",
   user: "root",
-  password: "",
-  database: ""
+  password: "root",
+  database: "mls_db"
 });
 
 // Connect to the database
