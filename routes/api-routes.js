@@ -25,13 +25,33 @@ module.exports = (app) => {
   })
 
   //get route for offense players of a specific team
+  app.get("/api/offense/:id", function(req, res) {
+    db.Teams.findOne({
+      where: {
+        id: req.params.id
+      },
+      include: [db.Offense]
+    }).then(function(dbOffense) {
+      res.json(dbOffense);
+    });
+  });
 
   //get route for all defesnse players
   app.get("/api/defense", (req, res) => {
     db.Defense.findAll({}).then((dbDefense) => res.json(dbDefense))
   })
-}
+
   //get route for defense players of a specific team
+  app.get("/api/defense/:id", function(req, res) {
+    db.Teams.findOne({
+      where: {
+        id: req.params.id
+      },
+      include: [db.Defense]
+    }).then(function(dbDefense) {
+      res.json(dbDefense);
+    });
+  });
 
   //get route from images
   
@@ -40,3 +60,5 @@ module.exports = (app) => {
 
 
     // POST route for saving a new bet
+
+}
