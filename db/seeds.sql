@@ -9,7 +9,7 @@ INSERT INTO teams (name,wins,losses,draws,points,goals) VALUES ("FC Dallas", 6, 
 INSERT INTO teams (name,wins,losses,draws,points,goals) VALUES ("Orlando City SC", 6, 5, 1, 19, 22);
 INSERT INTO teams (name,wins,losses,draws,points,goals) VALUES ("Houston Dynamo", 5, 4, 3, 18, 27);
 INSERT INTO teams (name,wins,losses,draws,points,goals) VALUES ("New England Revolution", 5, 4, 4, 19, 22);
-INSERT INTO teams (name,wins,losses,draws,points,goals) VALUES ("Vancouver Whitecaps FC", 5, 5, 5, 20, 21);
+INSERT INTO teams (name,wins,losses,draws,points,goals) VALUES ("Vancouver Whitecaps FC", 4, 5, 5, 17, 19);
 INSERT INTO teams (name,wins,losses,draws,points,goals) VALUES ("LA Galaxy", 5, 7, 1, 16, 18);
 INSERT INTO teams (name,wins,losses,draws,points,goals) VALUES ("Minnesota United FC", 5, 7, 1, 16, 16);
 INSERT INTO teams (name,wins,losses,draws,points,goals) VALUES ("Real Salt Lake", 6, 6, 1, 19, 17);
@@ -20,4 +20,4 @@ INSERT INTO teams (name,wins,losses,draws,points,goals) VALUES ("Montreal Impact
 INSERT INTO teams (name,wins,losses,draws,points,goals) VALUES ("DC United", 2, 5, 3, 9, 14);
 INSERT INTO teams (name,wins,losses,draws,points,goals) VALUES ("San Jose Earthquakes", 2, 6, 3, 9, 18);
 INSERT INTO teams (name,wins,losses,draws,points,goals) VALUES ("Seattle Sounders FC", 2, 6, 2, 9, 7);
-INSERT INTO teams (name,wins,losses,draws,points,goals) VALUES ("Colorado Rapids", 2, 8, 2, 8, 14);
+INSERT INTO teams (name,wins,losses,draws,points,goals) VALUES ("Colorado Rapids", 2, 7, 2, 8, 13);
