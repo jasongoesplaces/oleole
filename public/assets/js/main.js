@@ -2,6 +2,20 @@
 // chart for the first square
 var ctx = document.getElementById("myChart1");
 console.log(ctx);
+
+    $("a").click(function(event) {
+        var queryURL = "http://localhost:8080/api/teams/" + event.target.id;
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+          })
+            .then(function(response) {
+              console.log(response.data)
+            })
+    });
+
+
+
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
