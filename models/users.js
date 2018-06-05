@@ -6,8 +6,3 @@ module.exports = function(sequelize, DataTypes) {
   });
   return Users;
 };
-
-var records = [
-    { id: 1, username: 'oleole', password: 'goal', displayName: 'oleole', emails: [ { value: 'oleole@example.com' } ] }
-  , { id: 2, username: 'test', password: 'test', displayName: 'test', emails: [ { value: 'test@example.com' } ] }
-];

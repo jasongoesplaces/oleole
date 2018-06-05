@@ -20,7 +20,7 @@ module.exports = function(app) {
   )
 
   app.get("/dashboard", 
-    require("connect-ensure-login").ensureLoggedIn(),
+    //require("connect-ensure-login").ensureLoggedIn(),
     function(req, res) {
       res.sendFile(path.join(__dirname, "../views/dashboard.html"));
   });
