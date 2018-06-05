@@ -1,5 +1,5 @@
-
 // chart for the first square
+exports.users = require('../../users');
 var ctx = document.getElementById("myChart1");
 console.log(ctx);
 
