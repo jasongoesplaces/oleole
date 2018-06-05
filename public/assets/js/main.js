@@ -1,10 +1,9 @@
 // chart for the first square
-exports.users = require('../../users');
 var ctx = document.getElementById("myChart1");
 console.log(ctx);
 
     $("a").click(function(event) {
-        var queryURL = "http://localhost:8080/api/teams/" + event.target.id;
+        var queryURL = "/api/teams/" + event.target.id;
         $.ajax({
             url: queryURL,
             method: "GET"
