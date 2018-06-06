@@ -53,6 +53,12 @@ module.exports = (app) => {
     });
   });
 
+
+  //get route for users
+  app.get("/api/users", (req, res) => {
+    db.Users.findAll({}).then((dbUsers) => res.json(dbUsers))
+  })
+
   //get route from images
   
 
