@@ -2,6 +2,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var passport = require('passport');
 var Strategy = require('passport-local').Strategy;
+var sequelize = require('sequelize');
 
 // Sets up the Express App
 // =============================================================
@@ -14,7 +15,7 @@ var db = require("./models");
 // Configure the local strategy for use by Passport.
 passport.use(new Strategy(
   function(username, password, cb) {
-    db.users.findOne({where: {username: username, pass: password}, function(err, user) {
+    db.Users.find({where: {username: username, pass: password}, function(err, user) {
       if (err) { return cb(err); }
       if (!user) { return cb(null, false); }
       return cb(null, user);
@@ -58,12 +59,8 @@ require("./routes/api-routes.js")(app);
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
- db.sequelize.sync({ force: true }).then(() => {
+ db.sequelize.sync({ force: false }).then(() => {
    app.listen(PORT, () => {
      console.log("App listening on PORT " + PORT);
    });
  });
-
-//app.listen(PORT, () => {
-//   console.log("App listening on PORT " + PORT);
-// });
