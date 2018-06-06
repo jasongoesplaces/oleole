@@ -16,7 +16,7 @@ module.exports = (app) => {
     db.Teams.findOne({
       where: {
         id: req.params.id
-      }}).then((dbTeam) => res.json(dbTeam))
+      }}).then((dbTeams) => res.json(dbTeams))
   })
 
   //get route for all offense players
@@ -57,7 +57,17 @@ module.exports = (app) => {
   
 
   // post route for adding credits
-
+app.get("/api/users/:credits", function(req, res){
+  db.Users.update({
+    credits: req.body.integer
+  }, {
+      where: {
+        id: req.body.id
+      }
+  }).then(function(dbUsers) {
+    res.json(dbUsers);
+  });
+})
 
     // POST route for saving a new bet
 

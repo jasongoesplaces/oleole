@@ -9,7 +9,7 @@ console.log(ctx);
             method: "GET"
           })
             .then(function(response) {
-              console.log(response.data)
+              console.log(response)
             })
     });
 
