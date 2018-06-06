@@ -19,7 +19,6 @@ INSERT INTO offense (name,player,goals,sog,assists) VALUES ("FC Dallas", "Colman
 INSERT INTO offense (name,player,goals,sog,assists) VALUES ("Houston Dynamo", "Ellis,A", 8, 27, 5);
 INSERT INTO offense (name,player,goals,sog,assists) VALUES ("Houston Dynamo", "Manotas,M", 5, 13, 0);
 INSERT INTO offense (name,player,goals,sog,assists) VALUES ("Houston Dynamo", "Martinez,T", 3, 4, 9);
-INSERT INTO offense (name,player,goals,sog,assists) VALUES ("Houston Dynamo", "Martinez,T", 3, 4, 9);
 INSERT INTO offense (name,player,goals,sog,assists) VALUES ("Los Angeles FC", "Vela,C", 7, 16, 5);
 INSERT INTO offense (name,player,goals,sog,assists) VALUES ("Los Angeles FC", "Rossi,D", 5, 15, 6);
 INSERT INTO offense (name,player,goals,sog,assists) VALUES ("Los Angeles FC", "Blessing,L", 2, 7, 1);
