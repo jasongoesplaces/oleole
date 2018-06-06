@@ -2,19 +2,6 @@
 var ctx = document.getElementById("myChart1");
 console.log(ctx);
 
-$(".submit").click(function(event) {
-    
-    var queryURL = "/api/users/"
-    $.ajax({
-        url: queryURL,
-        method: "POST"
-    }).then(function(username, password, cb) {
-        db.Users.find({where: {username: username, pass: password}, function(err, user) {
-            passport.authenticate("local", { failureRedirect: "/login", successRedirect: "/dashboard"})
-        }})
-    });
-});
-
 $("a").click(function(event) {
     
     var queryURL = "/api/teams/" + event.target.id;
