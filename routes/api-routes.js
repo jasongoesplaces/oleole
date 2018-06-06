@@ -75,6 +75,8 @@ app.get("/api/users/:credits", function(req, res){
   });
 })
 
+
+
     // POST route for saving a new bet
 
 }
