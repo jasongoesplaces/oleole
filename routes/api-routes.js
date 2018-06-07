@@ -21,36 +21,28 @@ module.exports = (app) => {
 
   //get route for all offense players
   app.get("/api/offense", (req, res) => {
-    db.Offense.findAll({}).then((dbOffense) => res.json(dbOffense))
+    db.Offense.findAll({}).then((dbOffenses) => res.json(dbOffenses))
   })
 
   //get route for offense players of a specific team
   app.get("/api/offense/:id", function(req, res) {
-    db.Teams.findOne({
+    db.Offense.findAll({
       where: {
-        id: req.params.id
-      },
-      include: [db.Offense]
-    }).then(function(dbOffense) {
-      res.json(dbOffense);
-    });
+        teamID: req.params.id
+      }}).then((dbTeamO) => res.json(dbTeamO))
   });
 
   //get route for all defesnse players
   app.get("/api/defense", (req, res) => {
-    db.Defense.findAll({}).then((dbDefense) => res.json(dbDefense))
+    db.Defense.findAll({}).then((dbDefenses) => res.json(dbDefenses))
   })
 
   //get route for defense players of a specific team
   app.get("/api/defense/:id", function(req, res) {
-    db.Teams.findOne({
+    db.Defense.findAll({
       where: {
-        id: req.params.id
-      },
-      include: [db.Defense]
-    }).then(function(dbDefense) {
-      res.json(dbDefense);
-    });
+        teamID: req.params.id
+      }}).then((dbTeamD) => res.json(dbTeamD))
   });
 
 

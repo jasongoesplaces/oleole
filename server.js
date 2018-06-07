@@ -3,6 +3,7 @@ var bodyParser = require("body-parser");
 var passport = require('passport');
 var Strategy = require('passport-local').Strategy;
 var sequelize = require('sequelize');
+var charts = require('chart.js');
 var uuidv4 = require('uuid/v4');
 
 // Configure the local strategy for use by Passport.
