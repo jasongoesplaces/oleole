@@ -68,16 +68,100 @@ function getImages (){
    "NewEnglandRevolution.png","NewYorkCityFC.png","NewYorkRedBulls.png", "OrlandoCitySC.png",
    "PhiladelphiaUnion.png","PortlandTimbers.png","RealSaltLake.png","SanJoseEarthquakes.png",
    "SeattleSoundersFC.png","SportingKansasCity.png","TorontoFC.png","VancouverFC.png"]
-   $('#1').click(function(){
-    $(this).empty().append('<img src="images/'+images[0]+'" height="64px" width="64px">').hide();
+//Atlanta United
+$('#1').click(function(){
+    $(this).empty().append('<img src="/images/'+images[0]+'>')
 });
-    $('#2').click(function(){
-        $(this).empty().append('<img src="images/'+images[20]+'" height="64px" width="64px">').hide();
-    });
-    $('#3').click(function(){
-        $(this).empty().append('<img src="images/'+images[3]+'" height="64px" width="64px">').hide();
-    });
+//Sporting Kansas City
+$('#2').click(function(){
+    $(this).empty().append('<img src="/images/'+images[20]+'">')
+});
+//Columbus Crew SC
+$('#3').click(function(){
+    $(this).empty().append('<img src="/images/'+images[3]+'">')
+});
+//New York City FC
+$('#4').click(function(){
+    $(this).empty().append('<img src="/images/'+images[12]+'">')
+});
+//New York Red Bulls
+$('#5').click(function(){
+    $(this).empty().append('<img src="/images/'+images[13]+'">')
+});
+//Los Angeles Football Club
+$('#6').click(function(){
+    $(this).empty().append('<img src="/images/'+images[8]+'">')
+});
+//Portland Timbers
+$('#7').click(function(){
+    $(this).empty().append('<img src="/images/'+images[16]+'">')
+});
+//FC Dallas
+$('#8').click(function(){
+    $(this).empty().append('<img src="/images/'+images[5]+'">')
+});
+//Orlando City SC
+$('#9').click(function(){
+    $(this).empty().append('<img src="/images/'+images[14]+'">')
+});
+//Houston Dynamo
+$('#10').click(function(){
+    $(this).empty().append('<img src="/images/'+images[6]+'">')
+});
+//New England Revolution
+$('#11').click(function(){
+    $(this).empty().append('<img src="/images/'+images[]+'">')
+});
+//Vancouver Whitecaps FC
+$('#12').click(function(){
+    $(this).empty().append('<img src="/images/'+images[3]+'">')
+});
+//LA Galaxy
+$('#13').click(function(){
+    $(this).empty().append('<img src="/images/'+images[3]+'">')
+});
+//Minnesota United FC
+$('#14').click(function(){
+    $(this).empty().append('<img src="/images/'+images[3]+'">')
+});
+//Real Salt Lake
+$('#15').click(function(){
+    $(this).empty().append('<img src="/images/'+images[3]+'">')
+});
+//Philadelphia Union
+$('#16').click(function(){
+    $(this).empty().append('<img src="/images/'+images[3]+'">')
+});
+//Chicago Fire
+$('#17').click(function(){
+    $(this).empty().append('<img src="/images/'+images[3]+'">')
+});
+//Totonto FC
+$('#18').click(function(){
+    $(this).empty().append('<img src="/images/'+images[3]+'">')
+});
+//Montreal Impact
+$('#19').click(function(){
+    $(this).empty().append('<img src="/images/'+images[3]+'">')
+});
+//DC United
+$('#20').click(function(){
+    $(this).empty().append('<img src="/images/'+images[3]+'">')
+});
+//San Jose Earthquakes
+$('#21').click(function(){
+    $(this).empty().append('<img src="/images/'+images[3]+'">')
+});
+//Seattle Sounders FC
+$('#22').click(function(){
+    $(this).empty().append('<img src="/images/'+images[3]+'">')
+});
+//Colorado Rapids
+$('#23').click(function(){
+    $(this).empty().append('<img src="/images/'+images[3]+'">')
+});
 }
+
 
 var myChart = new Chart(ctx, {
     type: 'bar',
