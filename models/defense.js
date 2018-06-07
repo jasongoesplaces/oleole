@@ -8,16 +8,7 @@ module.exports = function(sequelize, DataTypes) {
         saves: DataTypes.INTEGER
       }, {
           timestamps: false
-      });
-
-      Defense.associate = function(models) {
-        Defense.belongsTo(models.Teams, {
-            foreignKey: {
-                allowNull: false
-            }
-        })
-    }
-
+        }
+    );
     return Defense
-  
 }

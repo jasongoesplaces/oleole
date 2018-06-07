@@ -15,9 +15,10 @@ CREATE TABLE `Teams` (
   PRIMARY KEY ( `id` ) 
 );
 
-CREATE TABLE `Offense` (
+CREATE TABLE `Offenses` (
   `id` Int( 11 ) AUTO_INCREMENT NOT NULL,
   `name` VARCHAR( 255) NOT NULL,
+  `teamID` INT (11) NOT NULL,
   `player` VARCHAR( 255 ) NOT NULL,
   `goals` Int (11) NOT NULL,
   `sog` Int (11) NOT NULL,
@@ -25,9 +26,10 @@ CREATE TABLE `Offense` (
   PRIMARY KEY ( `id` ) 
 );
 
-CREATE TABLE `Defense` (
+CREATE TABLE `Defenses` (
   `id` Int( 11 ) AUTO_INCREMENT NOT NULL,
   `name` VARCHAR( 255) NOT NULL,
+  `teamID` INT (11) NOT NULL,
   `player` VARCHAR( 255 ) NOT NULL,
   `SA` Int (11) NOT NULL,
   `GA` Int (11) NOT NULL,

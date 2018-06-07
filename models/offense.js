@@ -9,14 +9,5 @@ module.exports = function(sequelize, DataTypes) {
         }, {
           timestamps: false
     });
-
-    Offense.associate = function(models) {
-        Offense.belongsTo(models.Teams, {
-            foreignKey: {
-                allowNull: false
-            }
-        })
-    }
-
     return Offense
 }

@@ -15,6 +15,10 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../views/login.html"))
   })
 
+  app.get("/dashboard", function(req, res) {
+    res.sendFile(path.join(__dirname, "../views/dashboard.html"))
+  })
+
   app.post("/api/users", 
     passport.authenticate("local", { failureRedirect: "/fail", successRedirect: "/success"})
   )
