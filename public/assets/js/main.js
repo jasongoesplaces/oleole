@@ -61,6 +61,24 @@ $("a").click((event) => {
     })
 });
 
+function getImages (){
+ var images =[ "AtlantaUnitedFC.png","ChicagoFire.png","ColoradoRapids.png","ColumbusCrewSC.png",
+   "DCUnited.png","FCDallas.png","HoustonDynamo.png","LAGalaxy.png",
+   ,"LosAngelesFootballClub.png","MinnesotaUnitedFC.png","MontrealImpact.png",
+   "NewEnglandRevolution.png","NewYorkCityFC.png","NewYorkRedBulls.png", "OrlandoCitySC.png",
+   "PhiladelphiaUnion.png","PortlandTimbers.png","RealSaltLake.png","SanJoseEarthquakes.png",
+   "SeattleSoundersFC.png","SportingKansasCity.png","TorontoFC.png","VancouverFC.png"]
+   $('#1').click(function(){
+    $(this).empty().append('<img src="images/'+images[0]+'" height="64px" width="64px">').hide();
+});
+    $('#2').click(function(){
+        $(this).empty().append('<img src="images/'+images[20]+'" height="64px" width="64px">').hide();
+    });
+    $('#3').click(function(){
+        $(this).empty().append('<img src="images/'+images[3]+'" height="64px" width="64px">').hide();
+    });
+}
+
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {

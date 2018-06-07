@@ -51,7 +51,7 @@ module.exports = (app) => {
     db.Users.findAll({}).then((dbUsers) => res.json(dbUsers))
   })
 
-  //get route from images
+
   
 
   // post route for adding credits
