@@ -7,7 +7,21 @@ header{
     margin: 20px;
     color: white;
 }
+#dropdownMenu2{
+    border: 1px solid #f9cf0b;
+    border-color: #f9cf0b;
+    background-color: #242527;
+    color:#f9cf0b;
+    border-radius: 0px 10px 0px 0px;
+}
 
+#boom{
+    border: 1px solid #f9cf0b;
+    border-color: #f9cf0b;
+    background-color: #242527;
+    color:#f9cf0b;
+    border-radius: 0px 10px 0px 0px;
+}
 
 .btn.btn-outline-warning{
     /* border-radius:215px; */
