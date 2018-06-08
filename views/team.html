@@ -63,7 +63,7 @@
             </div>
             <div class="col-md-4">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                <button type="button" id="accountBtn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
                         <i class="material-icons">
                                 account_circle
                                 </i> My Account
@@ -74,15 +74,25 @@
                     <div class="modal-content">
                         <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">My Account</h4>
+                        <h4 class="modal-title">Username: <span id="myAccount"></span></h4>
                         </div>
                         <div class="modal-body">
                                 <h4 id="userCredits">34</h4>
                                 <h4>Credits</h4>
                         </div>
                         <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <a href="/login"><button type="button" class="btn btn-primary">Log Out</button></a>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Add Credits
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" id="boom">
+                                    <li><a href="#" id="credits1">5 Credits</a></li>
+                                    <li><a href="#" id="credits2">10 Credits</a></li>
+                                    <li><a href="#" id="credits3">15 Credits</a></li>
+                                </ul>
+                            </div>
+                            <a href="/login"><button type="button" class="btn btn-primary">Log Out</button></a>
                         </div>
                     </div>
                     </div>

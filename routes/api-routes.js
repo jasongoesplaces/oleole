@@ -51,21 +51,29 @@ module.exports = (app) => {
     db.Users.findAll({}).then((dbUsers) => res.json(dbUsers))
   })
 
+  //get route for specific user
+  app.get("/api/users/:id", (req, res) => {
+    db.Users.findOne({
+      where: {
+        id: req.params.id
+      }}).then((dbUserID) => res.json(dbUserID))
+  })
+
 
   
 
   // post route for adding credits
-app.get("/api/users/:credits", function(req, res){
-  db.Users.update({
-    credits: req.body.integer
-  }, {
-      where: {
-        id: req.body.id
-      }
-  }).then(function(dbUsers) {
-    res.json(dbUsers);
-  });
-})
+  app.get("/api/users/:credits", function(req, res){
+    db.Users.update({
+      credits: req.body.integer
+    }, {
+        where: {
+          id: req.body.id
+        }
+    }).then(function(dbUsers) {
+      res.json(dbUsers);
+    });
+  })
 
 
 
