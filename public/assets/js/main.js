@@ -77,11 +77,11 @@ function getImages (){
         "SeattleSoundersFC.png","SportingKansasCity.png","TorontoFC.png","VancouverFC.png"]
         //Atlanta United
         $('#1').click(function(){
-            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[0]+'>')
+            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[0]+'">')
         });
         //Sporting Kansas City
         $('#2').click(function(){
-            $('.thumbnail').empty().append('<img src=/assets/Images/'+images[20]+'">')
+            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[20]+'">')
         });
         //Columbus Crew SC
         $('#3').click(function(){
@@ -117,7 +117,7 @@ function getImages (){
         });
         //New England Revolution
         $('#11').click(function(){
-            $('.thumbnail').empty().append('<img src="../Images/'+images[11]+'">')
+            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[11]+'">')
         });
         //Vancouver Whitecaps FC
         $('#12').click(function(){
@@ -125,7 +125,7 @@ function getImages (){
         });
         //LA Galaxy
         $('#13').click(function(){
-            $(this).empty().append('<img src="/assets/Images/'+images[7]+'">')
+            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[7]+'">')
         });
         //Minnesota United FC
         $('#14').click(function(){
