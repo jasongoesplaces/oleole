@@ -10,7 +10,6 @@ CREATE TABLE `Teams` (
   `Draws` Int (11) NOT NULL,
   `Points` Int (11) NOT NULL,
   `Goals` Int (11) NOT NULL,
-  `Images` VARCHAR (255) NOT NULL,
 
   PRIMARY KEY ( `id` ) 
 );
