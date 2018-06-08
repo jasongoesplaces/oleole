@@ -22,7 +22,6 @@ $("a").click((event) => {
         teamData.push(response.losses)
         teamData.push(response.draws)
         teamData.push(response.points)
-        console.log(teamData)
         myChart.data.datasets[0].data = teamData
         myChart.update();
     })
@@ -43,6 +42,9 @@ $("a").click((event) => {
         teamOlabels.push(response[2].player)
         console.log(teamO)
         console.log(teamOlabels)
+        myLineChart.data.datasets[0].data = teamO
+        myLineChart.data.labels = teamOlabels
+        myLineChart.update();
     })
 
     var queryURL = "/api/defense/" + event.target.id;
@@ -59,8 +61,9 @@ $("a").click((event) => {
             teamD.push(response[1].saves)
             teamDlabels.push(response[1].player)
         }
-        console.log(teamD)
-        console.log(teamDlabels)
+        myDoughnutChart.data.datasets[0].data = teamD
+        myDoughnutChart.data.labels = teamDlabels
+        myDoughnutChart.update();
     })
 });
 //Images function
@@ -213,7 +216,7 @@ var myLineChart = new Chart(chart2, {
     data: {
         labels: teamOlabels,
         datasets: [{
-            label: 'Top Players ',
+            label: 'Goals',
             data: teamO,
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
@@ -249,23 +252,37 @@ var myLineChart = new Chart(chart2, {
 var chart3 = document.getElementById("myChart3");
 console.log(chart3);
 var myDoughnutChart = new Chart(chart3, {
-    type: 'doughnut',
+    type: 'bar',
     data: data = {
+        labels: teamDlabels,
         datasets: [{
-            data: [10]
-        }],
-    
-        // These labels appear in the legend and in the tooltips when hovering different arcs
-        labels: [
-            'Goals',
-            
-            
-        ]
+            label: 'Saves',
+            data: teamD,
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
     },
     options: {
         scales: {
             yAxes: [{
-                stacked: true
+                ticks: {
+                    beginAtZero:true
+                }
             }]
         }
     }
