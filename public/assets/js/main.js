@@ -68,101 +68,101 @@ function getImages (){
         //Images Array
         var images =[ "AtlantaUnitedFC.png","ChicagoFire.png","ColoradoRapids.png","ColumbusCrewSC.png",
         "DCUnited.png","FCDallas.png","HoustonDynamo.png","LAGalaxy.png",
-        ,"LosAngelesFootballClub.png","MinnesotaUnitedFC.png","MontrealImpact.png",
+        "LosAngelesFootballClub.png","MinnesotaUnitedFC.png","MontrealImpact.png",
         "NewEnglandRevolution.png","NewYorkCityFC.png","NewYorkRedBulls.png", "OrlandoCitySC.png",
         "PhiladelphiaUnion.png","PortlandTimbers.png","RealSaltLake.png","SanJoseEarthquakes.png",
         "SeattleSoundersFC.png","SportingKansasCity.png","TorontoFC.png","VancouverFC.png"]
         //Atlanta United
         $('#1').click(function(){
-            $('.thumbnail').empty().append('<img src="/images/'+images[0]+'>')
+            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[0]+'>')
         });
         //Sporting Kansas City
         $('#2').click(function(){
-            $('.thumbnail').empty().append('<img src="/images/'+images[20]+'">')
+            $('.thumbnail').empty().append('<img src=/assets/Images/'+images[20]+'">')
         });
         //Columbus Crew SC
         $('#3').click(function(){
-            $('.thumbnail').empty().append('<img src="/images/'+images[3]+'">')
+            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[3]+'">')
         });
         //New York City FC
         $('#4').click(function(){
-            $('.thumbnail').empty().append('<img src="/images/'+images[12]+'">')
+            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[12]+'">')
         });
         //New York Red Bulls
         $('#5').click(function(){
-            $('.thumbnail').empty().append('<img src="/images/'+images[13]+'">')
+            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[13]+'">')
         });
         //Los Angeles Football Club
         $('#6').click(function(){
-            $('.thumbnail').empty().append('<img src="/images/'+images[8]+'">')
+            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[8]+'">')
         });
         //Portland Timbers
         $('#7').click(function(){
-            $('.thumbnail').empty().append('<img src="/images/'+images[16]+'">')
+            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[16]+'">')
         });
         //FC Dallas
         $('#8').click(function(){
-            $('.thumbnail').empty().append('<img src="/images/'+images[5]+'">')
+            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[5]+'">')
         });
         //Orlando City SC
         $('#9').click(function(){
-            $('.thumbnail').empty().append('<img src="/images/'+images[14]+'">')
+            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[14]+'">')
         });
         //Houston Dynamo
         $('#10').click(function(){
-            $('.thumbnail').empty().append('<img src="/images/'+images[6]+'">')
+            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[6]+'">')
         });
         //New England Revolution
         $('#11').click(function(){
-            $('.thumbnail').empty().append('<img src="/images/'+images[11]+'">')
+            $('.thumbnail').empty().append('<img src="../Images/'+images[11]+'">')
         });
         //Vancouver Whitecaps FC
         $('#12').click(function(){
-            $('.thumbnail').empty().append('<img src="/images/'+images[3]+'">')
+            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[3]+'">')
         });
         //LA Galaxy
         $('#13').click(function(){
-            $(this).empty().append('<img src="/images/'+images[7]+'">')
+            $(this).empty().append('<img src="/assets/Images/'+images[7]+'">')
         });
         //Minnesota United FC
         $('#14').click(function(){
-            $('.thumbnail').empty().append('<img src="/images/'+images[9]+'">')
+            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[9]+'">')
         });
         //Real Salt Lake
         $('#15').click(function(){
-            $('.thumbnail').empty().append('<img src="/images/'+images[17]+'">')
+            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[17]+'">')
         });
         //Philadelphia Union
         $('#16').click(function(){
-            $('.thumbnail').empty().append('<img src="/images/'+images[15]+'">')
+            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[15]+'">')
         });
         //Chicago Fire
         $('#17').click(function(){
-            $('.thumbnail').empty().append('<img src="/images/'+images[1]+'">')
+            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[1]+'">')
         });
         //Toronto FC
         $('#18').click(function(){
-            $('.thumbnail').empty().append('<img src="/images/'+images[21]+'">')
+            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[21]+'">')
         });
         //Montreal Impact
         $('#19').click(function(){
-            $('.thumbnail').empty().append('<img src="/images/'+images[10]+'">')
+            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[10]+'">')
         });
         //DC United
         $('#20').click(function(){
-            $('.thumbnail').empty().append('<img src="/images/'+images[4]+'">')
+            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[4]+'">')
         });
         //San Jose Earthquakes
         $('#21').click(function(){
-            $('.thumbnail').empty().append('<img src="/images/'+images[18]+'">')
+            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[18]+'">')
         });
         //Seattle Sounders FC
         $('#22').click(function(){
-            $('.thumbnail').empty().append('<img src="/images/'+images[19]+'">')
+            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[19]+'">')
         });
         //Colorado Rapids
         $('#23').click(function(){
-            $('.thumbnail').empty().append('<img src="/images/'+images[2]+'">')
+            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[2]+'">')
         });
     }
     
