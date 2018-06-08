@@ -8,6 +8,20 @@ var teamD = [];
 var teamDlabels = [];
 var dataTest = [];
 
+$("#accountBtn").click((event) => {
+    event.preventDefault()
+
+    var queryURL = "/api/users/1"
+    $.ajax({
+        url:queryURL,
+        method:"GET"
+    }).then((response) => {
+        console.log(response)
+        $("#myAccount").empty().append(response.username)
+        $("#userCredits").empty().append(response.credits)
+    })
+})
+
 $(".teamStats").click((event) => {
     event.preventDefault()
     
