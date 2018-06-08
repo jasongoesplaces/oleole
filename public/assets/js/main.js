@@ -121,7 +121,7 @@ function getImages (){
         });
         //Vancouver Whitecaps FC
         $('#12').click(function(){
-            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[3]+'">')
+            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[22]+'">')
         });
         //LA Galaxy
         $('#13').click(function(){
@@ -170,6 +170,20 @@ function getImages (){
     }
     
 getImages();
+// Betting Function
+ function addCredits(){
+// Creates an array that lists out all of the options (Rock, Paper, or Scissors).
+var results = [1, 2, 3];
+
+// Creating variables to hold the number of wins, losses, and ties. They start at 0.
+var credits= 0
+$('#1').click(function(){
+    $('.thumbnail').empty().append('<img src="/assets/Images/'+images[0]+'">')
+});
+}
+function betCredits(){
+
+}
 
 var myChart = new Chart(ctx, {
     type: 'bar',
