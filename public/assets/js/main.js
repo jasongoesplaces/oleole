@@ -8,7 +8,7 @@ var teamD = [];
 var teamDlabels = [];
 var dataTest = [];
 
-$("a").click((event) => {
+$(".teamStats").click((event) => {
     event.preventDefault()
     
     var queryURL = "/api/teams/" + event.target.id;
