@@ -126,3 +126,8 @@ hr {
     background-color: #f9cf0b;
     color: #1a1e1f;
 }
+
+img{
+    height: 100px;
+    width: 100px;
+ }
