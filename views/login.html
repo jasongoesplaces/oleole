@@ -6,7 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href=..\public\assets\css\style2.css>
+    <link rel="stylesheet" type="text/css" href=\assets\css\style2.css>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -17,11 +17,11 @@
 
     <header class="v-header container">
         <div class="fullscreen-video-wrap">
-            <video src="../public\assets\Images\Practice_day.mp4" autoplay="true" loop="true"></video>
+            <video src="\assets\Images\Practice_day.mp4" autoplay="true" loop="true"></video>
         </div>
         <div class="header-overlay"></div>
         <div class="header-content">
-            <h1>OleOle Login</h1>
+            <h1>OleOle</h1>
             <form class="register" action="/register" method="post">
                 <div>
                     <label>Username:</label>
@@ -45,7 +45,7 @@
             </form>
 
 
-            <form action="/login" method="post">
+            <form action="/dashboard">
                 <div>
                     <label>Username:</label>
                     <input type="text" name="username" />
@@ -56,7 +56,9 @@
                     <input type="password" name="password" />
                 </div>
                 <div>
-                    <input class="btnn" type="submit" value="Submit" />
+                    <a href="/dashboard">
+                        <input class="btnn" type="submit" value="Submit" />
+                    </a>
                 </div>
                 <p class="message">Not Registered?
                     <a href="#">Register</a>

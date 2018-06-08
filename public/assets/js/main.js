@@ -6,9 +6,10 @@ var teamO = [];
 var teamOlabels = [];
 var teamD = [];
 var teamDlabels = [];
-var dataTest = [12,19,2,36]
+var dataTest = [];
 
 $("a").click((event) => {
+    event.preventDefault()
     
     var queryURL = "/api/teams/" + event.target.id;
     var teamData = [];
@@ -22,6 +23,8 @@ $("a").click((event) => {
         teamData.push(response.draws)
         teamData.push(response.points)
         console.log(teamData)
+        myChart.data.datasets[0].data = teamData
+        myChart.update();
     })
 
     var queryURL = "/api/offense/" + event.target.id;

@@ -37,4 +37,14 @@ CREATE TABLE `Defenses` (
   PRIMARY KEY ( `id` ) 
 );
 
-
+CREATE TABLE `Games` (
+  `id` Int( 11 ) AUTO_INCREMENT NOT NULL,
+  `homeTeam` VARCHAR( 255) NOT NULL,
+  `homeID` Int( 11 ) NOT NULL,
+  `homeGoals` Int (11) NOT NULL,
+  `awayTeam` VARCHAR (255) NOT NULL,
+  `awayID` Int (11) NOT NULL,
+  `awayGoals` Int (11) NOT NULL,
+  `gameResult` Int (11) NOT NULL,
+  PRIMARY KEY ( `id` ) 
+);

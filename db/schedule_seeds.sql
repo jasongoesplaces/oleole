@@ -1,0 +1,23 @@
+-- game result codes: 1 = home win; 2 = home loss; 3 = draw; 4 = game not played yet
+INSERT INTO Games (homeTeam,homeID,homeGoals,awayTeam,awayID,awayGoals,gameResult) VALUES ("Colorado Rapids",23,1,"Vancouver Whitecaps FC",12,2,2);
+INSERT INTO Games (homeTeam,homeID,homeGoals,awayTeam,awayID,awayGoals,gameResult) VALUES ("Portland Timbers",7,1,"LA Galaxy",13,1,3);
+INSERT INTO Games (homeTeam,homeID,homeGoals,awayTeam,awayID,awayGoals,gameResult) VALUES ("Atlanta United",1,3,"Philadelphia Union",16,1,1);
+INSERT INTO Games (homeTeam,homeID,homeGoals,awayTeam,awayID,awayGoals,gameResult) VALUES ("Montreal Impact",19,1,"Houston Dynamo",10,0,1);
+INSERT INTO Games (homeTeam,homeID,homeGoals,awayTeam,awayID,awayGoals,gameResult) VALUES ("New England Revolution",11,2,"New York Red Bulls",5,1,1);
+INSERT INTO Games (homeTeam,homeID,homeGoals,awayTeam,awayID,awayGoals,gameResult) VALUES ("New York City FC",4,3,"Orlando City SC",9,0,1);
+INSERT INTO Games (homeTeam,homeID,homeGoals,awayTeam,awayID,awayGoals,gameResult) VALUES ("Columbus Crew SC",3,3,"Toronto FC",18,3,3);
+INSERT INTO Games (homeTeam,homeID,homeGoals,awayTeam,awayID,awayGoals,gameResult) VALUES ("FC Dallas",8,2,"Los Angeles FC",6,1,1);
+INSERT INTO Games (homeTeam,homeID,homeGoals,awayTeam,awayID,awayGoals,gameResult) VALUES ("Chicago Fire",17,2,"San Jose Earthquakes",21,1,1);
+INSERT INTO Games (homeTeam,homeID,homeGoals,awayTeam,awayID,awayGoals,gameResult) VALUES ("Real Salt Lake",15,2,"Seattle Sounders",22,0,1);
+INSERT INTO Games (homeTeam,homeID,homeGoals,awayTeam,awayID,awayGoals,gameResult) VALUES ("Sporting Kansas City",2,4,"Minnesota United FC",14,1,1);
+INSERT INTO Games (homeTeam,homeID,homeGoals,awayTeam,awayID,awayGoals,gameResult) VALUES ("Philadelphia Union",16,0,"Toronto FC",18,0,4);
+INSERT INTO Games (homeTeam,homeID,homeGoals,awayTeam,awayID,awayGoals,gameResult) VALUES ("New York City FC",4,0,"Atlanta United",1,0,4);
+INSERT INTO Games (homeTeam,homeID,homeGoals,awayTeam,awayID,awayGoals,gameResult) VALUES ("Columbus Crew SC",3,0,"New York Red Bulls",5,0,4);
+INSERT INTO Games (homeTeam,homeID,homeGoals,awayTeam,awayID,awayGoals,gameResult) VALUES ("Vancouver Whitecaps",12,0,"Orlando City SC",9,0,4);
+INSERT INTO Games (homeTeam,homeID,homeGoals,awayTeam,awayID,awayGoals,gameResult) VALUES ("FC Dallas",8,0,"Montreal Impact",19,0,4);
+INSERT INTO Games (homeTeam,homeID,homeGoals,awayTeam,awayID,awayGoals,gameResult) VALUES ("Chicago Fire",17,0,"New England Revolution",11,0,4);
+INSERT INTO Games (homeTeam,homeID,homeGoals,awayTeam,awayID,awayGoals,gameResult) VALUES ("Houston Dynamo",10,0,"Colorado Rapids",23,0,4);
+INSERT INTO Games (homeTeam,homeID,homeGoals,awayTeam,awayID,awayGoals,gameResult) VALUES ("Seattle Sounders",22,0,"DC United",20,0,4);
+INSERT INTO Games (homeTeam,homeID,homeGoals,awayTeam,awayID,awayGoals,gameResult) VALUES ("LA Galaxy",13,0,"Real Salt Lake",15,0,4);
+INSERT INTO Games (homeTeam,homeID,homeGoals,awayTeam,awayID,awayGoals,gameResult) VALUES ("Portland Timbers",7,0,"Sporting Kansas City",2,0,4);
+INSERT INTO Games (homeTeam,homeID,homeGoals,awayTeam,awayID,awayGoals,gameResult) VALUES ("San Jose Earthquakes",21,0,"Los Angeles FC",6,0,4);
