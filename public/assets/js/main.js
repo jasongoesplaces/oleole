@@ -165,6 +165,8 @@ function getImages (){
             $('.thumbnail').empty().append('<img src="/images/'+images[2]+'">')
         });
     }
+    
+getImages();
 
 var myChart = new Chart(ctx, {
     type: 'bar',
