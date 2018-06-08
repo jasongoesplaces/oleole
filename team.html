@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>OleOle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"  href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css"  href="assets/css/effect.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    
+    
+</head>
+<div class="glitch">
+        <div class="glitch-img"></div>
+        <div class="glitch-img"></div>
+        <div class="glitch-img"></div>
+        <div class="glitch-img"></div>
+    </div>
+<header class="head">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Get Team Stats
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" id="boom">
+                      <li><a id="1" href="#">Atlanta United FC</a></li>
+                      <li><a id="2" href="#">Sporting Kansas City</a></li>
+                      <li><a id="3" href="#">Columbus Crew SC</a></li>
+                      <li><a id="4" href="#">New York City FC</a></li>
+                      <li><a id="5" href="#">New York Red Bulls</a></li>
+                      <li><a id="6" href="#">Los Angeles Football Club</a></li>
+                      <li><a id="7" href="#">Portland Timbers</a></li>
+                      <li><a id="8" href="#">FC Dallas</a></li>
+                      <li><a id="9" href="#">Orlando City SC</a></li>
+                      <li><a id="10" href="#">Huston Dynamo</a></li>
+                      <li><a id="11" href="#">New England Revolution</a></li>
+                      <li><a id="12" href="#">Vancouver Whitecaps FC</a></li>
+                      <li><a id="13" href="#">LA Galaxy</a></li>
+                      <li><a id="14" href="#">Minnesota United FC</a></li>
+                      <li><a id="15" href="#">Real Salt Lake</a></li>
+                      <li><a id="16" href="#">Philidelphia Union</a></li>
+                      <li><a id="17" href="#">Chicago Fire</a></li>
+                      <li><a id="18" href="#">Toronto FC</a></li>
+                      <li><a id="19" href="#">Montreal Impact</a></li>
+                      <li><a id="20" href="#">DC United</a></li>
+                      <li><a id="21" href="#">San Jose Earthquakes</a></li>
+                      <li><a id="22" href="#">Seattle Sounders FC</a></li>
+                      <li><a id="23" href="#">Colorado Rapids</a></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <a href="/dashboard">
+                    <button type="button" class="btn btn-outline-warning">Games</button>
+                  </a>
+            </div>
+            <div class="col-md-4">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                        <i class="material-icons">
+                                account_circle
+                                </i> My Account
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">My Account</h4>
+                        </div>
+                        <div class="modal-body">
+                                <h4 id="userCredits">34</h4>
+                                <h4>Credits</h4>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+            </div>
+            
+        </div>
+    </div>
+
+</header>
+<body>
+    
+    <div class="teamselector">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                    <div class="row">
+                            <div class="Teamview">
+                              <div class="thumbnail">
+                                <img src="assets/Images/513564862015.gif" alt="...">
+                                <div class="teamstyle">
+                                    <h2>-OleOle-</h2>
+                                </div>
+                                <hr>
+                                <div class="caption">
+                                  <h1>Orlando</h1>
+                                  <p></p>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <div class="container section1">
+        <div class="row">
+                <div class="col-md-4">
+                      <div class="card">
+                          
+                          <div class="card-body">
+                              <i class="large material-icons">insert_chart</i>
+                              <!-- Chart Goes here -->
+                            <canvas id="myChart1"></canvas>
+                            
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                          </div>
+                        </div>
+                        <div class="number" id="number2">
+                                <h3>19</h3>
+                            </div>
+                
+                  </div>
+                  <div class="col-md-4">
+                      
+                          <div class="card">
+                              
+                            <div class="card-body">
+                                <i class="large material-icons">beenhere</i>
+                                <!-- Chart Goes here -->
+                              <canvas id="myChart2"></canvas>
+                              
+                              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                            </div>
+                        <div class="number" id="number2">
+                            <h3>20</h3>
+                        </div>
+                      
+                  </div>
+                  <div class="col-md-4">
+                      
+                          <div class="card" >
+                              
+                            <div class="card-body">
+                                <i class="large material-icons">offline_bolt</i>
+                                <!-- Chart Goes here -->
+                              <canvas id="myChart3"></canvas>
+                              
+                              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                            </div>
+                            <div class="number" id="number2">
+                                    <h3>34</h3>
+                                </div>
+                    </div>
+                  
+        </div>
+    </div>
+    <!-- Place bet -->
+    <div class="placeBet">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                        <div class="row">
+                                <div class="Teamview">
+                                  <div class="thumbnail">
+                                        <i class="material-icons">
+                                                thumbs_up_down
+                                                </i>
+                                    <div class="teamstyle">
+                                        <h2>-OleOle-</h2>
+                                    </div>
+                                    <hr>
+                                    <div class="caption2">
+                                      <h1>Place Your bet!</h1>
+                                      <p>...</p>
+                                      <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="How Much?">
+                                            <span class="input-group-btn">
+                                              <button class="btn btn-default" type="button">Bet!</button>
+                                            </span>
+                                          </div><!-- /input-group -->
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>  
+    <script src="assets/js/main.js"></script> 
+    <script src="assets/js/modal.js"></script>  
+    
+</body>
+</html>
