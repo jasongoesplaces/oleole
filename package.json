@@ -20,6 +20,7 @@
   "homepage": "https://github.com/jasongoesplaces/oleole#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "browserify": "^16.2.2",
     "chart.js": "^2.7.2",
     "connect-ensure-login": "^0.1.1",
     "cookie-parser": "^1.4.3",

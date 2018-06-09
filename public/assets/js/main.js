@@ -7,6 +7,44 @@ var teamOlabels = [];
 var teamD = [];
 var teamDlabels = [];
 var dataTest = [];
+var credits = 0
+
+$("#userCredits").empty().append(credits)
+
+function getCredits(newCredits){
+    credits = newCredits
+    console.log(credits)
+    $("#userCredits").empty().append(credits)
+}
+
+$(".betBtn").click((event) => {
+    event.preventDefault()
+    var newCredits = credits - 5
+    console.log(newCredits)
+    getCredits(newCredits)
+})
+
+$("#credits1").click((event) => {
+    event.preventDefault()
+    var newCredits = credits + 5
+    console.log(newCredits)
+    getCredits(newCredits)
+})
+
+
+$("#credits2").click((event) => {
+    event.preventDefault()
+    var newCredits = credits + 10
+    getCredits(newCredits)
+})
+
+
+$("#credits3").click((event) => {
+    event.preventDefault()
+    var newCredits = credits + 15
+    getCredits(newCredits)
+})
+
 
 $("#accountBtn").click((event) => {
     event.preventDefault()
@@ -17,8 +55,8 @@ $("#accountBtn").click((event) => {
         method:"GET"
     }).then((response) => {
         console.log(response)
+
         $("#myAccount").empty().append(response.username)
-        $("#userCredits").empty().append(response.credits)
     })
 })
 
@@ -315,3 +353,5 @@ var myDoughnutChart = new Chart(chart3, {
         }
     }
 });
+
+M.toast({html: 'I am a toast!'})

@@ -67,5 +67,3 @@ INSERT INTO Offenses (name,teamID,player,goals,sog,assists) VALUES ("Toronto FC"
 INSERT INTO Offenses (name,teamID,player,goals,sog,assists) VALUES ("Vancouver Whitecaps FC", 12, "Techera,C",6, 10, 1);
 INSERT INTO Offenses (name,teamID,player,goals,sog,assists) VALUES ("Vancouver Whitecaps FC", 12, "Kamara,K",4, 9, 3);
 INSERT INTO Offenses (name,teamID,player,goals,sog,assists) VALUES ("Vancouver Whitecaps FC", 12, "Shea,B",3, 6, 0);
-
-

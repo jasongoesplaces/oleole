@@ -120,6 +120,7 @@ hr {
 .btn.btn-outline-warning{
     background-color: #1a1e1f;
     border-color: #f9cf0b;
+    color: #f9cf0b;
 }
 
 .btn-warning{

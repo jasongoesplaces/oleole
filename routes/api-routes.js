@@ -63,9 +63,9 @@ module.exports = (app) => {
   
 
   // post route for adding credits
-  app.get("/api/users/:credits", function(req, res){
+  app.put("/api/users/:id", function(req, res){
     db.Users.update({
-      credits: req.body.integer
+      credits: req.body.data
     }, {
         where: {
           id: req.body.id
