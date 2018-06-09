@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon"/ >
     <title>OleOle</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -43,27 +44,27 @@
                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                     <div class="modal-content">
-                        <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title">Username: <span id="myAccount"></span></h4>
+                        <div class="modal-header modalStyle">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="modalText" aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title modalText">Username: <span class="modalText" id="myAccount"></span></h4>
                         </div>
-                        <div class="modal-body">
-                                <h4 id="userCredits">34</h4>
-                                <h4>Credits</h4>
+                        <div class="modal-body modalStyle">
+                                <h4 class="modalText" id="userCredits">34</h4>
+                                <h4 class="modalText">Credits</h4>
                         </div>
-                        <div class="modal-footer">
-                            <div class="dropdown">
+                        <div class="modal-footer modalStyle">
+                            <div class="dropdown creditsDrop">
                                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Add Credits
                                     <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" id="boom">
-                                    <li><a href="#" class="creditsBtn" id="credits1">5 Credits</a></li>
-                                    <li><a href="#" class="creditsBtn" id="credits2">10 Credits</a></li>
-                                    <li><a href="#" class="creditsBtn" id="credits3">15 Credits</a></li>
+                                    <li><a class="teamStats" href="#" id="credits1">5 Credits</a></li>
+                                    <li><a class="teamStats" href="#" id="credits2">10 Credits</a></li>
+                                    <li><a class="teamStats" href="#" id="credits3">15 Credits</a></li>
                                 </ul>
                             </div>
-                            <a href="/login"><button type="button" class="btn btn-primary">Log Out</button></a>
+                            <a href="/login"><button type="button" class="btn btn-outline-warning">Log Out</button></a>
                         </div>
                     </div>
                     </div>
@@ -96,21 +97,21 @@
                             <div class="thumbnail">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <img src="assets/Images/MontrealImpact.png" alt="...">
+                                        <img src="assets/Images/VancouverFC.png" alt="...">
                                     </div>
                                     <div class="col-md-6">
-                                        <img src="assets/Images/HoustonDynamo.png" alt="...">
+                                        <img src="assets/Images/OrlandoCitySC.png" alt="...">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <button type="button" class="btn btn-outline-warning betBtn">Place Bet</button>
-                                    <h5>Montreal Impact</h5>
+                                    <h5>Vancouver Whitecaps</h5>
                                 </div>
                                 <div class="col-md-6">
                                     <button type="button" class="btn btn-outline-warning betBtn">Place Bet</button>
-                                    <h5>Houston Dynamo</h5>
+                                    <h5>Orlando City SC</h5>
                                 </div>
                         </div>
                         </div>
@@ -126,7 +127,7 @@
                           <div class="thumbnail">
                               <div class="row">
                                   <div class="col-md-6">
-                                      <img src="assets/Images/NewEnglandRevolution.png" alt="...">
+                                      <img src="assets/Images/ColumbusCrewSC.png" alt="...">
                                   </div>
                                   <div class="col-md-6">
                                       <img src="assets/Images/NewYorkRedBulls.png" alt="...">
@@ -136,7 +137,7 @@
                           <div class="row">
                               <div class="col-md-6">
                                 <button type="button" class="btn btn-outline-warning betBtn">Place Bet</button>
-                                  <h5>New England Revolution</h5>
+                                  <h5>Columbus Crew</h5>
                               </div>
                               <div class="col-md-6">
                                   <button type="button" class="btn btn-outline-warning betBtn">Place Bet</button>
@@ -156,21 +157,21 @@
                           <div class="thumbnail">
                               <div class="row">
                                   <div class="col-md-6">
-                                      <img src="assets/Images/ColoradoRapids.png" alt="...">
+                                      <img src="assets/Images/ChicagoFire.png" alt="...">
                                   </div>
                                   <div class="col-md-6">
-                                      <img src="assets/Images/VancouverFC.png" alt="...">
+                                      <img src="assets/Images/NewEnglandRevolution.png" alt="...">
                                   </div>
                               </div>
                           </div>
                           <div class="row">
                               <div class="col-md-6">
                                   <button type="button" class="btn btn-outline-warning betBtn">Place Bet</button>
-                                  <h5>Colorado Rapids</h5>
+                                  <h5>Chicago Fire</h5>
                               </div>
                               <div class="col-md-6">
                                   <button type="button" class="btn btn-outline-warning betBtn">Place Bet</button>
-                                  <h5>Vancouver Whitecaps FC</h5>
+                                  <h5>New England Revolution</h5>
                               </div>
                       </div>
                       </div>
@@ -192,7 +193,7 @@
                                     <img src="assets/Images/NewYorkCityFC.png" alt="...">
                                 </div>
                                 <div class="col-md-6">
-                                    <img src="assets/Images/OrlandoCitySC.png" alt="...">
+                                    <img src="assets/Images/AtlantaUnitedFC.png" alt="...">
                                 </div>
                             </div>
                         </div>
@@ -203,7 +204,7 @@
                             </div>
                             <div class="col-md-6">
                                 <button type="button" class="btn btn-outline-warning betBtn">Place Bet</button>
-                                <h5>Orlando City SC</h5>
+                                <h5>Atlanta United FC</h5>
                             </div>
                     </div>
                     </div>
@@ -222,7 +223,7 @@
                                   <img src="assets/Images/PortlandTimbers.png" alt="...">
                               </div>
                               <div class="col-md-6">
-                                  <img src="assets/Images/LAGalaxy.png" alt="...">
+                                  <img src="assets/Images/SportingKansasCity.png" alt="...">
                               </div>
                           </div>
                       </div>
@@ -233,7 +234,7 @@
                           </div>
                           <div class="col-md-6">
                               <button type="button" class="btn btn-outline-warning betBtn">Place Bet</button>
-                              <h5>LA Galaxy</h5>
+                              <h5>Sporting KC</h5>
                           </div>
                   </div>
                   </div>
@@ -249,21 +250,21 @@
                       <div class="thumbnail">
                           <div class="row">
                               <div class="col-md-6">
-                                  <img src="assets/Images/AtlantaUnitedFC.png" alt="...">
+                                  <img src="assets/Images/LAGalaxy.png" alt="...">
                               </div>
                               <div class="col-md-6">
-                                  <img src="assets/Images/PhiladelphiaUnion.png" alt="...">
+                                  <img src="assets/Images/RealSaltLake.png" alt="...">
                               </div>
                           </div>
                       </div>
                       <div class="row">
                           <div class="col-md-6">
                               <button type="button" class="btn btn-outline-warning betBtn">Place Bet</button>
-                              <h5>Atlanta United</h5>
+                              <h5>LA Galaxy</h5>
                           </div>
                           <div class="col-md-6">
                               <button type="button" class="btn btn-outline-warning betBtn">Place Bet</button>
-                              <h5>Philadelphia Union</h5>
+                              <h5>Real Salt Lake</h5>
                           </div>
                   </div>
                   </div>

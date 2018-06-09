@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon"/ >
     <title>OleOle</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -72,27 +73,27 @@
                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                     <div class="modal-content">
-                        <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title">Username: <span id="myAccount"></span></h4>
+                        <div class="modal-header modalStyle">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="modalText" aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title modalText">Username: <span class="modalText" id="myAccount"></span></h4>
                         </div>
-                        <div class="modal-body">
-                                <h4 id="userCredits">34</h4>
-                                <h4>Credits</h4>
+                        <div class="modal-body modalStyle">
+                                <h4 class="modalText" id="userCredits">34</h4>
+                                <h4 class="modalText">Credits</h4>
                         </div>
-                        <div class="modal-footer">
-                            <div class="dropdown">
+                        <div class="modal-footer modalStyle">
+                            <div class="dropdown creditsDrop">
                                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Add Credits
                                     <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" id="boom">
-                                    <li><a href="#" id="credits1">5 Credits</a></li>
-                                    <li><a href="#" id="credits2">10 Credits</a></li>
-                                    <li><a href="#" id="credits3">15 Credits</a></li>
+                                    <li><a class="teamStats" href="#" id="credits1">5 Credits</a></li>
+                                    <li><a class="teamStats" href="#" id="credits2">10 Credits</a></li>
+                                    <li><a class="teamStats" href="#" id="credits3">15 Credits</a></li>
                                 </ul>
                             </div>
-                            <a href="/login"><button type="button" class="btn btn-primary">Log Out</button></a>
+                            <a href="/login"><button type="button" class="btn btn-outline-warning">Log Out</button></a>
                         </div>
                     </div>
                     </div>
@@ -113,12 +114,12 @@
             <div class="col-md-4">
                     <div class="row">
                             <div class="Teamview">
-                              <div class="thumbnail">
+                              <div class="thumbnail1">
                                 <div class="teamstyle">
                                     <h2>-OleOle-</h2>
                                 </div>                
                                 <div class="caption">
-                                  <h1>Select a team to view stats.</h1>
+                                  <h1 class="modalText">Select a team to view stats.</h1>
                                   <p></p>
                                   
                                 </div>
@@ -144,7 +145,7 @@
                           </div>
                         </div>
                         <div class="number" id="number2">
-                                <h3>Team Stats</h3>
+                                <h3 class="modalText1">Team Stats</h3>
                             </div>
                 
                   </div>
@@ -161,7 +162,7 @@
                             </div>
                             </div>
                         <div class="number" id="number2">
-                            <h3>Goal Leaders</h3>
+                            <h3 class="modalText">Goal Leaders</h3>
                         </div>
                       
                   </div>
@@ -178,46 +179,13 @@
                             </div>
                             </div>
                             <div class="number" id="number2">
-                                    <h3>Goalkeeping</h3>
+                                    <h3 class="modalText">Goalkeeping</h3>
                                 </div>
                     </div>
                   
         </div>
     </div>
-    <!-- Place bet -->
-    <div class="placeBet">
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-2"></div>
-                <div class="col-md-4">
-                        <div class="row">
-                                <div class="Teamview">
-                                  <div class="thumbnail">
-                                        <i class="material-icons">
-                                                thumbs_up_down
-                                                </i>
-                                    <div class="teamstyle">
-                                        <h2>-OleOle-</h2>
-                                    </div>
-                                    <hr>
-                                    <div class="caption2">
-                                      <h1>Place Your bet!</h1>
-                                      <p>...</p>
-                                      <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="How Much?">
-                                            <span class="input-group-btn">
-                                              <button class="btn btn-default" type="button">Bet!</button>
-                                            </span>
-                                          </div><!-- /input-group -->
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2"></div>
-            </div>
-        </div>
+    
     
         <script
             src="https://code.jquery.com/jquery-3.3.1.min.js"
