@@ -24,6 +24,13 @@ $(".betBtn").click((event) => {
     getCredits(newCredits)
 })
 
+$(".betBtn2").click((event) => {
+    event.preventDefault()
+    var newCredits = credits + 5
+    console.log(newCredits)
+    getCredits(newCredits)
+})
+
 $("#credits1").click((event) => {
     event.preventDefault()
     var newCredits = credits + 5
