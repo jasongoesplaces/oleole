@@ -129,95 +129,95 @@ function getImages (){
         "SeattleSoundersFC.png","SportingKansasCity.png","TorontoFC.png","VancouverFC.png"]
         //Atlanta United
         $('#1').click(function(){
-            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[0]+'">')
+            $('.thumbnail1').empty().append('<img src="/assets/Images/'+images[0]+'">')
         });
         //Sporting Kansas City
         $('#2').click(function(){
-            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[20]+'">')
+            $('.thumbnail1').empty().append('<img src="/assets/Images/'+images[20]+'">')
         });
         //Columbus Crew SC
         $('#3').click(function(){
-            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[3]+'">')
+            $('.thumbnail1').empty().append('<img src="/assets/Images/'+images[3]+'">')
         });
         //New York City FC
         $('#4').click(function(){
-            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[12]+'">')
+            $('.thumbnail1').empty().append('<img src="/assets/Images/'+images[12]+'">')
         });
         //New York Red Bulls
         $('#5').click(function(){
-            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[13]+'">')
+            $('.thumbnail1').empty().append('<img src="/assets/Images/'+images[13]+'">')
         });
         //Los Angeles Football Club
         $('#6').click(function(){
-            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[8]+'">')
+            $('.thumbnail1').empty().append('<img src="/assets/Images/'+images[8]+'">')
         });
         //Portland Timbers
         $('#7').click(function(){
-            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[16]+'">')
+            $('.thumbnail1').empty().append('<img src="/assets/Images/'+images[16]+'">')
         });
         //FC Dallas
         $('#8').click(function(){
-            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[5]+'">')
+            $('.thumbnail1').empty().append('<img src="/assets/Images/'+images[5]+'">')
         });
         //Orlando City SC
         $('#9').click(function(){
-            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[14]+'">')
+            $('.thumbnail1').empty().append('<img src="/assets/Images/'+images[14]+'">')
         });
         //Houston Dynamo
         $('#10').click(function(){
-            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[6]+'">')
+            $('.thumbnail1').empty().append('<img src="/assets/Images/'+images[6]+'">')
         });
         //New England Revolution
         $('#11').click(function(){
-            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[11]+'">')
+            $('.thumbnail1').empty().append('<img src="/assets/Images/'+images[11]+'">')
         });
         //Vancouver Whitecaps FC
         $('#12').click(function(){
-            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[22]+'">')
+            $('.thumbnail1').empty().append('<img src="/assets/Images/'+images[22]+'">')
         });
         //LA Galaxy
         $('#13').click(function(){
-            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[7]+'">')
+            $('.thumbnail1').empty().append('<img src="/assets/Images/'+images[7]+'">')
         });
         //Minnesota United FC
         $('#14').click(function(){
-            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[9]+'">')
+            $('.thumbnail1').empty().append('<img src="/assets/Images/'+images[9]+'">')
         });
         //Real Salt Lake
         $('#15').click(function(){
-            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[17]+'">')
+            $('.thumbnail1').empty().append('<img src="/assets/Images/'+images[17]+'">')
         });
         //Philadelphia Union
         $('#16').click(function(){
-            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[15]+'">')
+            $('.thumbnail1').empty().append('<img src="/assets/Images/'+images[15]+'">')
         });
         //Chicago Fire
         $('#17').click(function(){
-            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[1]+'">')
+            $('.thumbnail1').empty().append('<img src="/assets/Images/'+images[1]+'">')
         });
         //Toronto FC
         $('#18').click(function(){
-            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[21]+'">')
+            $('.thumbnail1').empty().append('<img src="/assets/Images/'+images[21]+'">')
         });
         //Montreal Impact
         $('#19').click(function(){
-            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[10]+'">')
+            $('.thumbnail1').empty().append('<img src="/assets/Images/'+images[10]+'">')
         });
         //DC United
         $('#20').click(function(){
-            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[4]+'">')
+            $('.thumbnail1').empty().append('<img src="/assets/Images/'+images[4]+'">')
         });
         //San Jose Earthquakes
         $('#21').click(function(){
-            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[18]+'">')
+            $('.thumbnail1').empty().append('<img src="/assets/Images/'+images[18]+'">')
         });
         //Seattle Sounders FC
         $('#22').click(function(){
-            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[19]+'">')
+            $('.thumbnail1').empty().append('<img src="/assets/Images/'+images[19]+'">')
         });
         //Colorado Rapids
         $('#23').click(function(){
-            $('.thumbnail').empty().append('<img src="/assets/Images/'+images[2]+'">')
+            $('.thumbnail1').empty().append('<img src="/assets/Images/'+images[2]+'">')
         });
     }
     
@@ -245,18 +245,18 @@ var myChart = new Chart(ctx, {
             label: 'Wins vs Losses',
             data: teamData,
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
                 'rgba(75, 192, 192, 0.2)',
+                'rgba(226, 255, 64, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
                 'rgba(153, 102, 255, 0.2)',
                 'rgba(255, 159, 64, 0.2)'
             ],
             borderColor: [
-                'rgba(255,99,132,1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
+                'rgba(153, 102, 255, 1)',
                 'rgba(75, 192, 192, 1)',
+                'rgba(226, 255, 64, 1)',
+                'rgba(54, 162, 235, 1)',
                 'rgba(153, 102, 255, 1)',
                 'rgba(255, 159, 64, 1)'
             ],
@@ -285,17 +285,17 @@ var myLineChart = new Chart(chart2, {
             label: 'Goals',
             data: teamO,
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
                 'rgba(75, 192, 192, 0.2)',
                 'rgba(153, 102, 255, 0.2)',
                 'rgba(255, 159, 64, 0.2)'
             ],
             borderColor: [
-                'rgba(255,99,132,1)',
+                'rgba(75, 192, 192, 1)',
                 'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
+                'rgba(153, 102, 255, 1)',
                 'rgba(75, 192, 192, 1)',
                 'rgba(153, 102, 255, 1)',
                 'rgba(255, 159, 64, 1)'
@@ -325,16 +325,16 @@ var myDoughnutChart = new Chart(chart3, {
             label: 'Saves',
             data: teamD,
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
                 'rgba(255, 206, 86, 0.2)',
                 'rgba(75, 192, 192, 0.2)',
                 'rgba(153, 102, 255, 0.2)',
                 'rgba(255, 159, 64, 0.2)'
             ],
             borderColor: [
-                'rgba(255,99,132,1)',
                 'rgba(54, 162, 235, 1)',
+                'rgba(153, 102, 255, 1)',
                 'rgba(255, 206, 86, 1)',
                 'rgba(75, 192, 192, 1)',
                 'rgba(153, 102, 255, 1)',
