@@ -4,7 +4,7 @@
 * Gives users detailed information for each team in the league.
 
 ### Getting Started
-The app can be found [Here](https://aalkowni90.github.io/Orlandoeats/)
+The app can be found [Here](https://oleole.herokuapp.com/)
 
 ### Built With
 * [Node.js](https://nodejs.org/en/) - The backend server
